@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap");
+
+* {
+  font-family: "Antonio", sans-serif;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  scroll-padding: 3rem;
+}
+
+:root {
+  --primary: #121212;
+  --secondary: #ffa200;
+}
+
+body {
+  background-color: #fbfaef;
+  position: relative;
+  background-image: url("assets/images/bg-img.jpg");
+}
+
+.text-primary {
+  color: var(--primary);
+}
+
+/* navbar css */
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 3%;
+  background-color: white;
+}
+
+.navbar-logo {
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  letter-spacing: 4px;
+  gap: 10px;
+}
+
+#video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  width: 100%;
+}
+
+/* navbar css */
+
+/* heading text */
+.heading-wrapper {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.heading-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.highlight {
+  color: var(--secondary);
+  font-weight: 800;
+}
+
+.heading-subtext {
+  margin-top: 8px;
+  color: #fff;
+  font-size: 1rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 600px) {
+  .heading-title {
+    font-size: 1.7rem;
+  }
+
+  .heading-subtext {
+    font-size: 0.9rem;
+  }
+}
+
+/* heading text */
+
+.g-3 {
+  gap: 30px;
+}
+
+.d-flex {
+  display: flex;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.align-center {
+  align-items: center;
+}
+.count-badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 18px;
+  height: 18px;
+  background: red;
+  font-size: small;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.home-wrapper {
+  padding: 50px;
+  z-index: 2;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .home-wrapper {
+    padding: 10px;
+  }
+}
